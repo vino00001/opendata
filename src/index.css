@@ -36,3 +36,18 @@ body{
 .psw{
 	padding: 0 10px 0 40px;
 }
+
+
+
+
+/* .............Footer............... */
+.Footer {
+  position: absolute;
+  bottom: 0;
+	width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+
