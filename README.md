@@ -8,4 +8,4 @@ This programs purpose is to become a app that can show the best lunch deals in a
 We will be using 2 different API´s for our site ex. Google Maps API.
 We will allso be scraping data from diffrent sites with diffrent food.
 
-We are using bulma, css and sass for our styling of our site. 
+We are using bulma and css for our styling of our site. 
