@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import './index.scss';
 import "../node_modules/bulma/css/bulma.css";
 
 import{OpendataHeader} from "./OpendataHeader";
