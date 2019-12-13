@@ -3,17 +3,24 @@ import './index.scss';
 
 export function OpendataFilter(props){
 
+    function Check(){
+        document.getElementById("restaurant1").checked = true;
+    }    
+             
+    
+
     return <div className ="Sidebar">
-       <a><input type="checkbox" name="restaurant1"></input> American</a>
-       <a><input type="checkbox" name="restaurant2"></input> Kinesiskt</a>
-       <a><input type="checkbox" name="restaurant3"></input> Thai</a>
-       <a><input type="checkbox" name="restaurant4"></input> Asiatiskt</a>
-       <a><input type="checkbox" name="restaurant5"></input> Pizza</a>
-       <a><input type="checkbox" name="restaurant6"></input> Vegitariskt</a>
-       <a><input type="checkbox" name="restaurant7"></input> Hamburgare</a>
-       <a><input type="checkbox" name="restaurant8"></input> Sallad</a>
-       <a><input type="checkbox" name="restaurant9"></input> Kebab</a>
-       <a><input type="checkbox" name="restaurant10"></input> Sushi</a>
-        
+       <a onClick = {Check}><input type="checkbox" id="restaurant1"></input> Amerikanskt</a>
+       <a onClick = {Check}><input type="checkbox" id="restaurant2"></input> Kinesiskt</a>
+       <a onClick = {Check}><input type="checkbox" id="restaurant3"></input> Thai</a>
+       <a onClick = {Check}><input type="checkbox" id="restaurant4"></input> Asiatiskt</a>
+       <a onClick = {Check}><input type="checkbox" id="restaurant5"></input> Pizza</a>
+       <a onClick = {Check}><input type="checkbox" id="restaurant6"></input> Vegitariskt</a>
+       <a onClick = {Check}><input type="checkbox" id="restaurant7"></input> Hamburgare</a>
+       <a onClick = {Check}><input type="checkbox" id="restaurant8"></input> Sallad</a>
+       <a onClick = {Check}><input type="checkbox" id="restaurant9"></input> Kebab</a>
+       <a onClick = {Check}><input type="checkbox" id="restaurant10"></input> Sushi</a>
     </div>
+
+    
 }
