@@ -6,6 +6,7 @@ import './index.scss';
 import{OpendataHeader} from "./OpendataHeader";
 import{OpendataFooter} from "./OpendataFooter";
 import{OpendataFilter} from "./OpendataFilter";
+import{OpendataStart} from "./OpendataStart";
 
 
 
@@ -16,6 +17,6 @@ function Opendata(){
         <footer><OpendataFooter/></footer>        
         </div>
 }
-ReactDOM.render(<Opendata />, document.getElementById('root'));
+ReactDOM.render(<OpendataStart />, document.getElementById('root'));
 
 
