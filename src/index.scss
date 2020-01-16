@@ -23,31 +23,51 @@
 	color: red;
 }
 
-.uname{
-	padding-right: 10px;
-}
-
-.psw{
-	padding: 0 10px 0 40px;
-}
-
 /*................Create acc/Login...................*/
 .LoginForm{
 	margin: auto;
   	width: 50%;
-	padding-top: 15em;
+	padding-top: 12em;
 	text-align: center;
 }
 .Create {
 	margin-bottom: 5em;
 }
-.uname{
-	text-align: center;
+
+.NewUser{
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-template-rows: auto auto;
+	margin-bottom: 2em;
+	grid-row-gap: 1em;
+}
+
+.NewUser label{
+	text-align: right;
+	padding-right: 1em;
+}
+
+.OldUser{
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-template-rows: auto auto;
+	margin-bottom: 2em;
+	grid-row-gap: 1em;
+}
+
+.OldUser label{
+	text-align: right;
+	padding-right: 1em;
+}
+
+#username{
+	width: 15em;
 }
 
 #password{
-	margin-bottom: 2em;
+	width: 15em;
 }
+
 
 /*................Filter...................*/
 .Sidebar {
