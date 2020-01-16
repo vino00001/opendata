@@ -1,9 +1,15 @@
 import React from "react";
+import markerIcon from "./images/marker-icon-red-test.png";
 import {
-    Feature, Point,
-    Map, View, ol
+    layer, point,
+    Map, Layers, View, ol
 } from "react-openlayers";
-import {fromLonLat} from "react-openlayers";
+import Feature from "ol/Feature";
+import Icon from "ol/style/Icon";
+import Point from "ol/geom/Point";
+import Style from "ol/style/Style";
+import VectorSource from "ol/source/Vector";
+import {fromLonLat} from "ol/proj"
 
 export function ShowcaseMap(props){
     const coordinatesArray = [
@@ -190,15 +196,34 @@ export function ShowcaseMap(props){
     ]
 
     const geoMarkerArray = coordinatesArray.map((coordinates, index) => {
-        return <Feature type="geomarker"
-                geometry={<Point />}
-                id={index}
-                coordinates={coordinates} />
+        return new Feature({
+            type: "geoMarker",
+            geometry: new Point(fromLonLat([coordinates.longitude, coordinates.latitude])),
+            id: index,
+            coordinates: coordinates
+        })
     });
 
     console.log(geoMarkerArray);
 
+    const geoMarkerSource = new VectorSource({
+        features: geoMarkerArray
+    });
+
+    const styles = {
+        "geoMarker": new Style({
+            image: new Icon({
+                src: markerIcon
+            })
+        })
+    };
+
     return(
-        <Map view={{center:[0,0], zoom: 14}}></Map>
+        <Map view={{center:[0,0], zoom: 14}}>
+            <Layers>
+                <layer.Tile />
+                <layer.Vector source={geoMarkerSource} />
+            </Layers>
+        </Map>
     )
 }
