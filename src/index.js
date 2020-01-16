@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.scss';
 
 
-import{OpendataHeader} from "./opendataHeader";
+import{OpendataHeader} from "./OpendataHeader";
 import{OpendataFooter} from "./OpendataFooter";
 import{OpendataFilter} from "./OpendataFilter";
 import{OpendataStart} from "./OpendataStart";
