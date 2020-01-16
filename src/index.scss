@@ -23,6 +23,14 @@
 	color: red;
 }
 
+.uname{
+	padding-right: 1em;
+}
+
+.psw{
+	padding-right: 1em;
+}
+
 /*................Create acc/Login...................*/
 .LoginForm{
 	margin: auto;
@@ -62,6 +70,7 @@
 
 #username{
 	width: 15em;
+	margin-right: 1em;
 }
 
 #password{
