@@ -35,7 +35,7 @@ export function OpendataStart(props){
         <h1 class="title is-1">Create new User</h1>
 
         <div className = "NewUser">
-        <label className="uname" htmlFor="uname"><b class="subtitle is-4">New username:</b></label>
+        <label className="uname" htmlFor="uname"><b class="subtitle is-4">Username:</b></label>
         <input type="text" id="username"></input>
 
 
@@ -60,7 +60,7 @@ export function OpendataStart(props){
         </div>
 
         <p><button class="button is-success" onClick={signIn}>Login</button></p>
-        <p>{ShowError}</p>
+        <p id= "ShowError">{ShowError}</p>
 
         </div>
     </div>
