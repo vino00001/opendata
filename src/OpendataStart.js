@@ -29,6 +29,11 @@ export function OpendataStart(props){
         }
     }
 
+    function gotoOpendata(){
+        props.navigate("Opendata");
+      }
+
+
     return <div className= "LoginForm">
 
         <div className = "Create">
@@ -42,7 +47,7 @@ export function OpendataStart(props){
         <label className="psw" htmlFor="psw"><b class="subtitle is-4">Password:</b></label>
         <input type="password" id="password"></input>
         </div>
-        <p><button class="button is-success" onClick={signUp}>Create</button></p>
+        <p><button class="button is-success button is-medium" onClick={signUp}>Create</button></p>
         </div>
         
         
@@ -59,8 +64,11 @@ export function OpendataStart(props){
         <input type="password" id="password"></input>
         </div>
 
-        <p><button class="button is-success" onClick={signIn}>Login</button></p>
+        <p><button class="button is-success button is-medium" onClick={signIn}>Login</button></p>
         <p id= "ShowError">{ShowError}</p>
+
+
+        <p className = "NoAccBtn"><button class="button is-info button is-medium" onClick={gotoOpendata}>Use without login</button></p>
 
         </div>
     </div>
