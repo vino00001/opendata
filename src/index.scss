@@ -156,8 +156,8 @@
 
 
 /*................Mobile first...................*/
-/* On screens that are less than 700px wide, make the sidebar into a topbar */
-@media screen and (max-width: 700px) {
+/* On screens that are less than 800px wide, make the sidebar into a topbar */
+@media screen and (max-width: 800px) {
 	.Sidebar {
 	  width: 100%;
 	  height: auto;
@@ -173,21 +173,128 @@
 	}
 	.Header{
 		text-align: right;
-		height: 5em;
+		height: 7em;
 	}
 
 	#username{
 		width: 15em;
 		margin-right: 54px;
 	}
-	
 
+	.psw{
+		margin-left: 0;
+	}
+  }
+  @media screen and (max-width: 700px) {
+	.Sidebar {
+	  width: 100%;
+	  height: auto;
+	  position: relative;
+	}
+	.Sidebar a {float: left;}
+	div.content {margin-left: 0;}
+
+	.FoodContent li {
+		float: right;
+		width: 175px;
+		display: block;
+	}
+	.Header{
+		text-align: right;
+		height: 7em;
+	}
+
+	#username{
+		width: 15em;
+		margin-right: 54px;
+	}
+
+	.psw{
+		margin-left: 200px;
+	}
   }
   
+  /* On screens that are less than 500px, display the bar vertically, instead of horizontally */
+  @media screen and (max-width: 500px) {
+	.Sidebar a {
+	  text-align: center;
+	  float: none;
+	}
+	.Sidebar {
+		width: 100%;
+		height: auto;
+		position: relative;
+	  }
+	.Sidebar a {float: left;}
+	  div.content {margin-left: 0;}
+  
+	.FoodContent li {
+		  float: right;
+		  width: 175px;
+		  display: block;
+	  }
+	.Header{
+		  text-align: right;
+		  height: 7em;
+	  }
+  
+	#username{
+		width: 10em;
+		margin-right: 10em;
+	}
+	
+	#password{
+		width: 10em;
+		margin-right: 80px;
+	}
+
+	.psw{
+		margin-left: -50px;  
+	}
+	.uname{
+		padding-right: 1em;
+	}
+  }
+
   /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
   @media screen and (max-width: 400px) {
 	.Sidebar a {
 	  text-align: center;
 	  float: none;
+	}
+	.Sidebar {
+		width: 100%;
+		height: auto;
+		position: relative;
+	  }
+	.Sidebar a {float: left;}
+	  div.content {margin-left: 0;}
+  
+	.FoodContent li {
+		  float: right;
+		  width: 175px;
+		  display: block;
+	  }
+	.Header{
+		  text-align: right;
+		  height: 7em;
+	  }
+  
+	#username{
+		width: 10em;
+		margin-right: 5em;
+	}
+	
+	#password{
+		width: 10em;
+		margin-right: 5em;
+	}
+
+	.psw{
+		margin-left: 30px;  
+	}
+	.uname{
+		padding-right: 1em;
+		margin-left: -1em;
 	}
   }
