@@ -4,11 +4,11 @@
 .Header{
   text-align: right;
   height: 50px;
+
 }
 
 .Header li a {
 	float: left;
-	color: red;
 	font-size: 20px;
 	padding: 3px;
 	margin-top: -5px;
@@ -20,7 +20,7 @@
 	padding: 15px;
 }
 .Header b{
-	color: red;
+	color: white;
 }
 
 .uname{
@@ -116,20 +116,48 @@
 }
 
 
-/* .............Footer............... */
-.Footer {
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-	background-color: black;
-	color: white;
+/*..............Container............*/
+
+.FoodConainer{
+	width: 960px;
+	background-color: #fff;
+	margin: 50px auto;	 
+	margin-top: 25px;
 	text-align: center;
 }
 
 
+.FoodContent{
+	float: right;
+	display: inline-grid;
+	grid-template-columns: auto auto auto auto;
+	grid-column-gap: 2em;
+	margin-bottom: 2em;
+	grid-row-gap: 1em;
+	padding: 1em;
+
+}
+
+.FoodContent li {
+	float: right;
+	width: 375px;
+	display: block;
+}
+
+/* .............Footer............... */
+.Footer {
+	position: relative;
+	height: 30px;
+	background-color: black;
+	color: white;
+	text-align: center;
+	clear: both;
+}
+
+
 /*................Mobile first...................*/
-/* On screens that are less than 700px wide, make the sidebar into a topbar */
-@media screen and (max-width: 700px) {
+/* On screens that are less than 800px wide, make the sidebar into a topbar */
+@media screen and (max-width: 800px) {
 	.Sidebar {
 	  width: 100%;
 	  height: auto;
@@ -137,12 +165,136 @@
 	}
 	.Sidebar a {float: left;}
 	div.content {margin-left: 0;}
+
+	.FoodContent li {
+		float: right;
+		width: 175px;
+		display: block;
+	}
+	.Header{
+		text-align: right;
+		height: 7em;
+	}
+
+	#username{
+		width: 15em;
+		margin-right: 54px;
+	}
+
+	.psw{
+		margin-left: 0;
+	}
+  }
+  @media screen and (max-width: 700px) {
+	.Sidebar {
+	  width: 100%;
+	  height: auto;
+	  position: relative;
+	}
+	.Sidebar a {float: left;}
+	div.content {margin-left: 0;}
+
+	.FoodContent li {
+		float: right;
+		width: 175px;
+		display: block;
+	}
+	.Header{
+		text-align: right;
+		height: 7em;
+	}
+
+	#username{
+		width: 15em;
+		margin-right: 54px;
+	}
+
+	.psw{
+		margin-left: 200px;
+	}
   }
   
+  /* On screens that are less than 500px, display the bar vertically, instead of horizontally */
+  @media screen and (max-width: 500px) {
+	.Sidebar a {
+	  text-align: center;
+	  float: none;
+	}
+	.Sidebar {
+		width: 100%;
+		height: auto;
+		position: relative;
+	  }
+	.Sidebar a {float: left;}
+	  div.content {margin-left: 0;}
+  
+	.FoodContent li {
+		  float: right;
+		  width: 175px;
+		  display: block;
+	  }
+	.Header{
+		  text-align: right;
+		  height: 7em;
+	  }
+  
+	#username{
+		width: 10em;
+		margin-right: 10em;
+	}
+	
+	#password{
+		width: 10em;
+		margin-right: 80px;
+	}
+
+	.psw{
+		margin-left: -50px;  
+	}
+	.uname{
+		padding-right: 1em;
+	}
+  }
+
   /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
   @media screen and (max-width: 400px) {
 	.Sidebar a {
 	  text-align: center;
 	  float: none;
+	}
+	.Sidebar {
+		width: 100%;
+		height: auto;
+		position: relative;
+	  }
+	.Sidebar a {float: left;}
+	  div.content {margin-left: 0;}
+  
+	.FoodContent li {
+		  float: right;
+		  width: 175px;
+		  display: block;
+	  }
+	.Header{
+		  text-align: right;
+		  height: 7em;
+	  }
+  
+	#username{
+		width: 10em;
+		margin-right: 5em;
+	}
+	
+	#password{
+		width: 10em;
+		margin-right: 5em;
+	}
+
+	.psw{
+		margin-left: 30px;  
+	}
+	.uname{
+		padding-right: 1em;
+		margin-left: -1em;
 	}
   }
