@@ -17,6 +17,6 @@ function Opendata(){
         <footer><OpendataFooter/></footer>        
         </div>
 }
-ReactDOM.render(<OpendataStart/>, document.getElementById('root'));
+ReactDOM.render(<Opendata/>, document.getElementById('root'));
 
 
