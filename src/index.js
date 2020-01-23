@@ -7,16 +7,17 @@ import{OpendataHeader} from "./OpendataHeader";
 import{OpendataFooter} from "./OpendataFooter";
 import{OpendataFilter} from "./OpendataFilter";
 import{OpendataStart} from "./OpendataStart";
+import{OpendataNavigator} from "./OpendataNavigator"; 
 
 
 
-function Opendata(){
+export function Opendata(){
     return <div className="Content">
         <header><OpendataHeader/></header>
         <div><OpendataFilter/></div>
         <footer><OpendataFooter/></footer>        
         </div>
 }
-ReactDOM.render(<Opendata/>, document.getElementById('root'));
+ReactDOM.render(<OpendataNavigator/>, document.getElementById('root'));
 
 

@@ -2,11 +2,13 @@ import React from "react";
 
 import "./MapTemplate.css";
 
-import {createMap, resetOverlay} from "./MapMap";
+import {createMap, resetOverlay, getMarkersArray} from "./MapMap";
 
 export function MapTemplate(props){
 
     React.useEffect(() => {createMap()});
+
+    React.useEffect(() => {getMarkersArray()});
 
     function closePopup() {
         resetOverlay();
