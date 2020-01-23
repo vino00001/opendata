@@ -4,6 +4,7 @@
 .Header{
   text-align: right;
   height: 50px;
+
 }
 
 .Header li a {
@@ -116,14 +117,42 @@
 }
 
 
+/*..............Container............*/
+
+.FoodConainer{
+	width: 960px;
+	background-color: #fff;
+	margin: 50px auto;	 
+	margin-top: 25px;
+	text-align: center;
+}
+
+
+.FoodContent{
+	float: right;
+	display: inline-grid;
+	grid-template-columns: auto auto auto auto;
+	grid-column-gap: 2em;
+	margin-bottom: 2em;
+	grid-row-gap: 1em;
+	padding: 1em;
+
+}
+
+.FoodContent li {
+	float: right;
+	width: 375px;
+	display: block;
+}
+
 /* .............Footer............... */
 .Footer {
-	position: absolute;
-	bottom: 0;
-	width: 100%;
+	position: relative;
+	height: 30px;
 	background-color: black;
 	color: white;
 	text-align: center;
+	clear: both;
 }
 
 
@@ -137,6 +166,23 @@
 	}
 	.Sidebar a {float: left;}
 	div.content {margin-left: 0;}
+
+	.FoodContent li {
+		float: right;
+		width: 175px;
+		display: block;
+	}
+	.Header{
+		text-align: right;
+		height: 5em;
+	}
+
+	#username{
+		width: 15em;
+		margin-right: 54px;
+	}
+	
+
   }
   
   /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
