@@ -7,8 +7,6 @@ import { CheckUser } from "./services/LoginService";
 
 
 export function OpendataStart(props){
-    const [showError, setShowError] = React.useState("");
-
     const [isCreateError, setIsCreateError] = React.useState(false);
     const [isLoginError, setIsLoginError] = React.useState(false);
     const [errorMessage, setErrorMessage] = React.useState("");
@@ -18,28 +16,6 @@ export function OpendataStart(props){
 
     const [lUsername, setLUsername] = React.useState("");
     const [lPassword, setLPassword] = React.useState("");
-
-
-    async function signUp(){
-        const rusername = document.getElementById("rusername").value;
-        const rpassword = document.getElementById("rpassword").value;
-        const newRegister = await NewUser(rusername, rpassword);
-        if(newRegister === true){
-        }else{
-            setShowError("Username or password exist")
-        }
-    }
-
-    async function signIn(){
-        const username = document.getElementById("username").value;
-        const password = document.getElementById("password").value;
-        const isLoggedIn = await NewUser(username, password);
-        if(isLoggedIn === true){
-
-        }else{
-            setShowError("Wrong username or password!!")
-        }
-    }
 
     function gotoOpendata(){
         props.navigate("Opendata");
