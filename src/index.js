@@ -13,7 +13,7 @@ import{OpendataNavigator} from "./OpendataNavigator";
 
 export function Opendata(props){
     return <div className="Content">
-        <header><OpendataHeader username={props.username}/></header>
+        <header><OpendataHeader username={props.username} navigate={props.navigate}/></header>
         <div><OpendataFilter/></div>
         <div><OpendataContent/></div>
         <footer><OpendataFooter/></footer>        
