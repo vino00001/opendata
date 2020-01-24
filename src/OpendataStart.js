@@ -9,7 +9,8 @@ import { CheckUser } from "./services/LoginService";
 export function OpendataStart(props){
     const [showError, setShowError] = React.useState("");
 
-    const [isError, setIsError] = React.useState(false);
+    const [isCreateError, setIsCreateError] = React.useState(false);
+    const [isLoginError, setIsLoginError] = React.useState(false);
     const [errorMessage, setErrorMessage] = React.useState("");
 
     const [rUsername, setRUsername] = React.useState("");
@@ -52,11 +53,13 @@ export function OpendataStart(props){
                 setRUsername("");
                 setRPassword("");
             } else {
-                setIsError(true);
+                setIsCreateError(true);
+                setIsLoginError(false);
+                setRPassword("");
                 setErrorMessage("User already exists!");
             }
         } catch (err) {
-            setIsError(true);
+            setIsCreateError(true);
             setErrorMessage(err);
         }
     }
@@ -66,14 +69,16 @@ export function OpendataStart(props){
         try {
             if (result.status === 200) {
                 setErrorMessage("");
-                setRUsername("");
-                setRPassword("");
+                setLUsername("");
+                setLPassword("");
             } else {
-                setIsError(true);
+                setIsLoginError(true);
+                setIsCreateError(false);
+                setLPassword("");
                 setErrorMessage("Something is fishy!");
             }
         } catch (err) {
-            setIsError(true);
+            setIsLoginError(true);
             setErrorMessage(err);
         }
     }
@@ -87,7 +92,7 @@ export function OpendataStart(props){
                         <label className="uname" htmlFor="uname"><b className="subtitle is-4">Username:</b></label>
                         <input
                             type="text"
-                            id="username"
+                            className="username"
                             value={rUsername}
                             onChange={e => setRUsername(e.target.value)}
                         />
@@ -96,14 +101,14 @@ export function OpendataStart(props){
                         <label className="psw" htmlFor="psw"><b className="subtitle is-4">Password:</b></label>
                         <input
                             type="password"
-                            id="password"
+                            className="password"
                             value={rPassword}
                             onChange={e => setRPassword(e.target.value)}
                         />
 
                     </div>
                     <p><button className="button is-success button is-medium" onClick={handleRegister}>Create</button></p>
-                    {isError && <p className="ShowError" id="create-error">{errorMessage}</p>}
+                    {isCreateError && <p className="ShowError" id="create-error">{errorMessage}</p>}
                 </div>
 
             
@@ -115,7 +120,7 @@ export function OpendataStart(props){
                         <label className="uname" htmlFor="uname"><b className="subtitle is-4">Username:</b></label>
                         <input
                             type="text"
-                            id="username"
+                            className="username"
                             value={lUsername}
                             onChange={e => setLUsername(e.target.value)}
                         />
@@ -124,14 +129,14 @@ export function OpendataStart(props){
                         <label className="psw" htmlFor="psw"><b className="subtitle is-4">Password:</b></label>
                         <input
                             type="password"
-                            id="password"
+                            className="password"
                             value={lPassword}
                             onChange={e => setLPassword(e.target.value)}    
                         />
                     </div>
 
                     <p><button className="button is-success button is-medium" onClick={handeLogin}>Login</button></p>
-                    {isError && <p className="ShowError" id="login-error">{errorMessage}</p>}
+                    {isLoginError && <p className="ShowError" id="login-error">{errorMessage}</p>}
 
                 </div>
 
