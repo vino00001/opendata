@@ -19,6 +19,6 @@ export function Opendata(props){
         <footer><OpendataFooter/></footer>        
         </div>
 }
-ReactDOM.render(<Opendata/>, document.getElementById('root'));
+ReactDOM.render(<OpendataNavigator/>, document.getElementById('root'));
 
 
