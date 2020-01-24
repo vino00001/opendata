@@ -6,26 +6,26 @@ export function OpendataContent(props){
     
     return <div className ="FoodContainer">
         <div className = "FoodContent">
-            <li><a href="pics\art.jpg"><img src="pics\art.jpg"/></a></li>
-            <li><a href="pics\art.jpg"><img src="pics\art.jpg"/></a></li>
-            <li><a href="pics\art.jpg"><img src="pics\art.jpg"/></a></li>
-            <li><a href="pics\art.jpg"><img src="pics\art.jpg"/></a></li>
-            <li><a href="pics\art.jpg"><img src="pics\art.jpg"/></a></li>
-            <li><a href="pics\art.jpg"><img src="pics\art.jpg"/></a></li>
-            <li><a href="pics\art.jpg"><img src="pics\art.jpg"/></a></li>
-            <li><a href="pics\art.jpg"><img src="pics\art.jpg"/></a></li>
-            <li><a href="pics\art.jpg"><img src="pics\art.jpg"/></a></li>
-            <li><a href="pics\art.jpg"><img src="pics\art.jpg"/></a></li>
-            <li><a href="pics\art.jpg"><img src="pics\art.jpg"/></a></li>
-            <li><a href="pics\art.jpg"><img src="pics\art.jpg"/></a></li>
-            <li><a href="pics\art.jpg"><img src="pics\art.jpg"/></a></li>
-            <li><a href="pics\art.jpg"><img src="pics\art.jpg"/></a></li>
-            <li><a href="pics\art.jpg"><img src="pics\art.jpg"/></a></li>
-            <li><a href="pics\art.jpg"><img src="pics\art.jpg"/></a></li>
-            <li><a href="pics\art.jpg"><img src="pics\art.jpg"/></a></li>
-            <li><a href="pics\art.jpg"><img src="pics\art.jpg"/></a></li>
-            <li><a href="pics\art.jpg"><img src="pics\art.jpg"/></a></li>
-            <li><a href="pics\art.jpg"><img src="pics\art.jpg"/></a></li>
+            <li><a href="pics\art.jpg" rel="group"><img src="pics\art.jpg"/></a></li>
+            <li><a href="pics\art.jpg" rel="group"><img src="pics\art.jpg"/></a></li>
+            <li><a href="pics\art.jpg" rel="group"><img src="pics\art.jpg"/></a></li>
+            <li><a href="pics\art.jpg" rel="group"><img src="pics\art.jpg"/></a></li>
+            <li><a href="pics\art.jpg" rel="group"><img src="pics\art.jpg"/></a></li>
+            <li><a href="pics\art.jpg" rel="group"><img src="pics\art.jpg"/></a></li>
+            <li><a href="pics\art.jpg" rel="group"><img src="pics\art.jpg"/></a></li>
+            <li><a href="pics\art.jpg" rel="group"><img src="pics\art.jpg"/></a></li>
+            <li><a href="pics\art.jpg" rel="group"><img src="pics\art.jpg"/></a></li>
+            <li><a href="pics\art.jpg" rel="group"><img src="pics\art.jpg"/></a></li>
+            <li><a href="pics\art.jpg" rel="group"><img src="pics\art.jpg"/></a></li>
+            <li><a href="pics\art.jpg" rel="group"><img src="pics\art.jpg"/></a></li>
+            <li><a href="pics\art.jpg" rel="group"><img src="pics\art.jpg"/></a></li>
+            <li><a href="pics\art.jpg" rel="group"><img src="pics\art.jpg"/></a></li>
+            <li><a href="pics\art.jpg" rel="group"><img src="pics\art.jpg"/></a></li>
+            <li><a href="pics\art.jpg" rel="group"><img src="pics\art.jpg"/></a></li>
+            <li><a href="pics\art.jpg" rel="group"><img src="pics\art.jpg"/></a></li>
+            <li><a href="pics\art.jpg" rel="group"><img src="pics\art.jpg"/></a></li>
+            <li><a href="pics\art.jpg" rel="group"><img src="pics\art.jpg"/></a></li>
+            <li><a href="pics\art.jpg" rel="group"><img src="pics\art.jpg"/></a></li>
 
             
         </div>

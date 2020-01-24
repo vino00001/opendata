@@ -1,9 +1,12 @@
 @import '~bulma/bulma.sass';
 
+/* #=id .=class */
+
+
 /* ...................Header..................... */
 .Header{
   text-align: right;
-  height: 50px;
+  height: 60px;
 
 }
 
@@ -21,6 +24,10 @@
 }
 .Header b{
 	color: white;
+}
+
+.MapBtn{
+	margin-left: 1em;
 }
 
 .uname{
@@ -163,6 +170,7 @@
 	  height: auto;
 	  position: relative;
 	}
+
 	.Sidebar a {float: left;}
 	div.content {margin-left: 0;}
 
@@ -171,6 +179,7 @@
 		width: 175px;
 		display: block;
 	}
+
 	.Header{
 		text-align: right;
 		height: 7em;
@@ -185,12 +194,14 @@
 		margin-left: 0;
 	}
   }
+
   @media screen and (max-width: 700px) {
 	.Sidebar {
 	  width: 100%;
 	  height: auto;
 	  position: relative;
 	}
+	
 	.Sidebar a {float: left;}
 	div.content {margin-left: 0;}
 
@@ -220,11 +231,13 @@
 	  text-align: center;
 	  float: none;
 	}
+
 	.Sidebar {
 		width: 100%;
 		height: auto;
 		position: relative;
-	  }
+	}
+
 	.Sidebar a {float: left;}
 	  div.content {margin-left: 0;}
   
@@ -232,11 +245,12 @@
 		  float: right;
 		  width: 175px;
 		  display: block;
-	  }
+	}
+
 	.Header{
 		  text-align: right;
 		  height: 7em;
-	  }
+	}
   
 	#username{
 		width: 10em;
@@ -249,10 +263,15 @@
 	}
 
 	.psw{
-		margin-left: -50px;  
+		margin-left: -20px;  
 	}
+
 	.uname{
 		padding-right: 1em;
+	}
+
+	.MapBtn{
+		margin-top: 1em;
 	}
   }
 
@@ -262,11 +281,13 @@
 	  text-align: center;
 	  float: none;
 	}
+
 	.Sidebar {
 		width: 100%;
 		height: auto;
 		position: relative;
-	  }
+	}
+
 	.Sidebar a {float: left;}
 	  div.content {margin-left: 0;}
   
@@ -274,11 +295,11 @@
 		  float: right;
 		  width: 175px;
 		  display: block;
-	  }
+	}
 	.Header{
 		  text-align: right;
 		  height: 7em;
-	  }
+	}
   
 	#username{
 		width: 10em;
@@ -293,8 +314,21 @@
 	.psw{
 		margin-left: 30px;  
 	}
+
 	.uname{
 		padding-right: 1em;
 		margin-left: -1em;
+	}
+
+	.loginbtn{
+		float: left;
+		margin-left: 129px;
+		margin-top: 1em;
+	}
+
+	.MapBtn{
+		float: left;
+		margin-left: 2.5em;
+		margin-top: 1em;
 	}
   }

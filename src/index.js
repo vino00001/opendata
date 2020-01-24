@@ -11,14 +11,14 @@ import{OpendataNavigator} from "./OpendataNavigator";
 
 
 
-export function Opendata(){
+export function Opendata(props){
     return <div className="Content">
-        <header><OpendataHeader/></header>
+        <header><OpendataHeader navigate={props.navigate}/></header>
         <div><OpendataFilter/></div>
         <div><OpendataContent/></div>
         <footer><OpendataFooter/></footer>        
         </div>
 }
-ReactDOM.render(<OpendataNavigator/>, document.getElementById('root'));
+ReactDOM.render(<Opendata/>, document.getElementById('root'));
 
 
