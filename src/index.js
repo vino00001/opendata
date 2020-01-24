@@ -11,9 +11,9 @@ import{OpendataNavigator} from "./OpendataNavigator";
 
 
 
-export function Opendata(){
+export function Opendata(props){
     return <div className="Content">
-        <header><OpendataHeader/></header>
+        <header><OpendataHeader username={props.username}/></header>
         <div><OpendataFilter/></div>
         <div><OpendataContent/></div>
         <footer><OpendataFooter/></footer>        

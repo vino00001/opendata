@@ -1,6 +1,5 @@
 import React from 'react';
 import './index.scss';
-import { NewUser } from "./OpendataAuth";
 import { CreateUser } from "./services/RegisterService";
 import { CheckUser } from "./services/LoginService";  
 
@@ -19,7 +18,7 @@ export function OpendataStart(props){
 
     function gotoOpendata(){
         props.navigate("Opendata");
-      }
+    }
 
     async function handleRegister() {
         const result = await CreateUser(rUsername, rPassword);
@@ -47,11 +46,14 @@ export function OpendataStart(props){
                 setErrorMessage("");
                 setLUsername("");
                 setLPassword("");
+                props.setIsLoggedIn(true);
+                props.setUsername(lUsername);
+                gotoOpendata();
             } else {
                 setIsLoginError(true);
                 setIsCreateError(false);
                 setLPassword("");
-                setErrorMessage("Something is fishy!");
+                setErrorMessage("Something is fishy!"); //error handling could be much better
             }
         } catch (err) {
             setIsLoginError(true);
