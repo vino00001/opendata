@@ -13,7 +13,13 @@ export function OpendataHeader(props){
     }
 
     return <div className="Header">
+<<<<<<< HEAD
                 <button className = "MapBtn button is-small button is-success" onClick={gotoMap}>Map</button>
                 {props.isLoggedIn && <div id="header-logout-content"><p>Welcome, {props.username}</p><button className="button is-small button is-info" onClick={logoutHandler} >Logout</button></div> }
+=======
+                {props.username && <p>Welcome, {props.username}</p>}
+            
+                <button className = "MapBtn button is-medium button is-success" onClick={gotoMap}>Map</button>
+>>>>>>> bebedb0fefba6fdb111677817afd030f59bac396
             </div>
 }
