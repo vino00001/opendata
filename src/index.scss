@@ -7,8 +7,8 @@
 
 .Header{
   text-align: right;
-  height: 60px;
-  color: #fff;
+  height: 80px;
+  color: white;
 }
 
 .Header li a {
@@ -28,16 +28,11 @@
 }
 
 .MapBtn{
-	margin-left: 1em;
+	float: right;
+	padding-bottom: 1em;
+
 }
 
-.uname{
-	padding-right: 1em;
-}
-
-.psw{
-	padding-right: 1em;
-}
 
 /*................Create acc/Login...................*/
 .LoginForm{
@@ -185,17 +180,9 @@
 		text-align: right;
 		height: 7em;
 	}
-
-	.username{
-		width: 15em;
-		margin-right: 54px;
-	}
-
-	.psw{
-		margin-left: 0;
-	}
   }
 
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
   @media screen and (max-width: 700px) {
 	.Sidebar {
 		width: 100%;
@@ -214,15 +201,6 @@
 	.Header{
 		text-align: right;
 		height: 7em;
-	}
-
-	.username{
-		width: 15em;
-		margin-right: 54px;
-	}
-
-	.psw{
-		margin-left: 200px;
 	}
   }
   
@@ -256,24 +234,6 @@
 	.Header{
 		text-align: right;
 		height: 7em;
-	}
-  
-	.username{
-		width: 10em;
-		margin-right: 10em;
-	}
-	
-	.password{
-		width: 10em;
-		margin-right: 80px;
-	}
-
-	.psw{
-		margin-left: -20px;  
-	}
-
-	.uname{
-		padding-right: 1em;
 	}
 
 	.MapBtn{
@@ -310,25 +270,6 @@
 		text-align: right;
 		height: 7em;
 	}
-  
-	.username{
-		width: 10em;
-		margin-right: 5em;
-	}
-	
-	.password{
-		width: 10em;
-		margin-right: 5em;
-	}
-
-	.psw{
-		margin-left: 30px;  
-	}
-
-	.uname{
-		padding-right: 1em;
-		margin-left: -1em;
-	}
 
 	.loginbtn{
 		float: left;
@@ -337,8 +278,6 @@
 	}
 
 	.MapBtn{
-		float: left;
-		margin-left: 2.5em;
 		margin-top: 1em;
 	}
   }

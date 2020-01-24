@@ -10,6 +10,6 @@ export function OpendataHeader(props){
     return <div className="Header">
                 {props.username && <p>Welcome, {props.username}</p>}
             
-                <button className = "MapBtn button is-small button is-success" onClick={gotoMap}>Map</button>
+                <button className = "MapBtn button is-medium button is-success" onClick={gotoMap}>Map</button>
             </div>
 }
