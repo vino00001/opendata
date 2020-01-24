@@ -12,7 +12,7 @@ export function OpendataNavigator(){
         return <OpendataStart navigate= {setcurrentpage} setIsLoggedIn={setIsLoggedIn} setUsername={setUsername} />
     }
     if(currentpage === "Opendata"){
-        return <Opendata navigate = {setcurrentpage} isLoggedIn={isLoggedIn} username={username} />
+        return <Opendata navigate = {setcurrentpage} isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} username={username} setUsername={setUsername} />
     }
     if(currentpage ==="MapTemplate"){
         return <MapTemplate navigate ={setcurrentpage}/>

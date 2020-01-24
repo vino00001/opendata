@@ -9,6 +9,11 @@
   text-align: right;
   height: 60px;
   color: #fff;
+  background-color: black;
+  text-align: right;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .Header li a {
@@ -18,17 +23,8 @@
 	margin-top: -5px;
 }
 
-.Header{
-	background-color: black;
-	text-align: right;
-	padding: 15px;
-}
 .Header b{
 	color: white;
-}
-
-.MapBtn{
-	margin-left: 1em;
 }
 
 .uname{
@@ -37,6 +33,10 @@
 
 .psw{
 	padding-right: 1em;
+}
+
+#header-logout-content {
+	display: flex;
 }
 
 /*................Create acc/Login...................*/

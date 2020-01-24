@@ -51,7 +51,7 @@ export async function getMarkersArray() {
 const styles = {
     "geoMarker": new Style({
         image: new Icon({
-            src: markerIcon
+            src: "marker-icon-red-test.png"
         })
     })
 };
