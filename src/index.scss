@@ -167,18 +167,18 @@
 /* On screens that are less than 800px wide, make the sidebar into a topbar */
 @media screen and (max-width: 800px) {
 	.Sidebar {
-	  width: 100%;
-	  height: auto;
-	  position: relative;
+		width: 100%;
+		height: auto;
+		position: relative;
 	}
 
 	.Sidebar a {float: left;}
 	div.content {margin-left: 0;}
 
 	.FoodContent li {
-		float: right;
-		width: 175px;
+		width: 150px;
 		display: block;
+		margin-left: 1em;
 	}
 
 	.Header{
@@ -198,19 +198,19 @@
 
   @media screen and (max-width: 700px) {
 	.Sidebar {
-	  width: 100%;
-	  height: auto;
-	  position: relative;
+		width: 100%;
+		height: auto;
+		position: relative;
 	}
 	
 	.Sidebar a {float: left;}
 	div.content {margin-left: 0;}
 
 	.FoodContent li {
-		float: right;
 		width: 175px;
 		display: block;
 	}
+
 	.Header{
 		text-align: right;
 		height: 7em;
@@ -229,8 +229,8 @@
   /* On screens that are less than 500px, display the bar vertically, instead of horizontally */
   @media screen and (max-width: 500px) {
 	.Sidebar a {
-	  text-align: center;
-	  float: none;
+		text-align: center;
+		float: none;
 	}
 
 	.Sidebar {
@@ -241,16 +241,21 @@
 
 	.Sidebar a {float: left;}
 	  div.content {margin-left: 0;}
+
+	.FoodContent{
+		grid-template-columns: auto auto;
+		margin-left: 1em;
+		margin-right: 1em;
+	}
   
 	.FoodContent li {
-		  float: right;
-		  width: 175px;
-		  display: block;
+		width: 150px;
+		display: block;
 	}
 
 	.Header{
-		  text-align: right;
-		  height: 7em;
+		text-align: right;
+		height: 7em;
 	}
   
 	.username{
@@ -279,8 +284,8 @@
   /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
   @media screen and (max-width: 400px) {
 	.Sidebar a {
-	  text-align: center;
-	  float: none;
+		text-align: center;
+		float: none;
 	}
 
 	.Sidebar {
@@ -291,15 +296,19 @@
 
 	.Sidebar a {float: left;}
 	  div.content {margin-left: 0;}
+
+	.FoodContent{
+		grid-template-columns: auto auto;
+	}
   
 	.FoodContent li {
-		  float: right;
-		  width: 175px;
-		  display: block;
+		margin-left: -1em;
+		width: 150px;
+		display: block;
 	}
 	.Header{
-		  text-align: right;
-		  height: 7em;
+		text-align: right;
+		height: 7em;
 	}
   
 	.username{
